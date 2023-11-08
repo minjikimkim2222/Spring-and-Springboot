@@ -1,3 +1,0 @@
-INDEX VERSION 1.134+/Users/minji/Desktop/Spring-and-Springboot/.metadata/.plugins/org.eclipse.jdt.core
-3227224978.index
-1865797976.index
