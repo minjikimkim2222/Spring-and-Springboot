@@ -519,3 +519,6 @@ java.io.FileNotFoundException: /Users/minji/Desktop/Spring-and-Springboot/.metad
 2023-11-08 15:08:03,708 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
 2023-11-08 15:08:03,710 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
 2023-11-08 15:08:03,711 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/minji/Downloads/learn-spring-framework/src/test/resources
+2023-11-08 15:11:17,229 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-11-08 15:11:17,231 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2023-11-08 15:11:17,232 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/minji/Downloads/learn-spring-framework/src/test/resources
