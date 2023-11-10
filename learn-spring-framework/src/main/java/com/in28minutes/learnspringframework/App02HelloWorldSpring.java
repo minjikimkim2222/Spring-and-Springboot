@@ -18,7 +18,12 @@ public class App02HelloWorldSpring {
 		System.out.println(context.getBean("age"));
 
 		System.out.println(context.getBean("person"));
+		System.out.println(context.getBean("person2MethodCall"));
+		System.out.println(context.getBean("person3Parameters"));
 
-		System.out.println(context.getBean("address"));
+		System.out.println(context.getBean("address2")); // Bean 이름을 변경한 것으로 찾는다
+		// System.out.println(context.getBean(Person.class));
+		System.out.println(context.getBean("person", Person.class));
+
 	}
 }
