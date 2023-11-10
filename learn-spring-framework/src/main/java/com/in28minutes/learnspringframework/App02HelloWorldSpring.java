@@ -22,8 +22,12 @@ public class App02HelloWorldSpring {
 		System.out.println(context.getBean("person3Parameters"));
 
 		System.out.println(context.getBean("address2")); // Bean 이름을 변경한 것으로 찾는다
-		// System.out.println(context.getBean(Person.class));
+		System.out.println(context.getBean(Person.class));
 		System.out.println(context.getBean("person", Person.class));
+
+//		System.out.println("step 14"); // 함수형 프로그래밍을 이용
+//		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println); // method 참조
+		System.out.println(context.getBean("person5Qualifier"));
 
 	}
 }
