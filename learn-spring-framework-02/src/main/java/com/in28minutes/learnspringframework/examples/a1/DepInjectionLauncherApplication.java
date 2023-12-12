@@ -21,25 +21,18 @@ class YourBusinessClass {
 	@Autowired
 	public YourBusinessClass(Dependency1 dependency1, Dependency2 dependency2) {
 		super();
-		System.out.println("Constructor Injection - YourBussinessClass ");
+		// System.out.println("Constructor Injection - YourBussinessClass ");
 		this.dependency1 = dependency1;
 		this.dependency2 = dependency2;
 	}
 
-//	@Autowired
-//	public void setDependency1(Dependency1 dependency1) {
-//		System.out.println("Setter Injection - setDependency1 ");
-//		this.dependency1 = dependency1;
-//	}
-//
-//	@Autowired
-//	public void setDependency2(Dependency2 dependency2) {
-//		System.out.println("Setter Injection - setDependency2 ");
-//		this.dependency2 = dependency2;
-//	}
-
 	public String toString() {
 		return "Using " + dependency1 + " and " + dependency2;
+	}
+
+	public void execute() {
+		// YourBusinessClass의 toString 메서드를 통해 의존성 사용
+		System.out.println("execute 실행 " + toString());
 	}
 }
 
@@ -65,7 +58,13 @@ public class DepInjectionLauncherApplication {
 		// Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 		// 현재 Bean이 무엇이 있는지 출력
 
-		System.out.println(context.getBean(YourBusinessClass.class));
+		// System.out.println(context.getBean(YourBusinessClass.class));
+
+		// @Autowired를 통해 주입될 YourBusinessClass 객체 사용
+
+		YourBusinessClass application = context.getBean(YourBusinessClass.class);
+
+		application.execute();
 
 	}
 
