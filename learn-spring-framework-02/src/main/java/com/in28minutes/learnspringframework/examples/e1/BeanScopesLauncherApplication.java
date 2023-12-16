@@ -1,7 +1,5 @@
 package com.in28minutes.learnspringframework.examples.e1;
 
-import java.util.Arrays;
-
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
@@ -30,8 +28,12 @@ public class BeanScopesLauncherApplication {
 
 				new AnnotationConfigApplicationContext(BeanScopesLauncherApplication.class);
 
-		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
-		// 현재 Bean이 무엇이 있는지 출력
+		System.out.println(context.getBean(NormalClass.class));
+		System.out.println(context.getBean(NormalClass.class));
+
+		System.out.println(context.getBean(PrototypeClass.class));
+		System.out.println(context.getBean(PrototypeClass.class));
+		System.out.println(context.getBean(PrototypeClass.class));
 	}
 
 }
