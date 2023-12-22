@@ -1,0 +1,13 @@
+package com.in28minutes.springboot.learnjpaandhibernate.course.jdbc;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+// Repository 어노테이션 - 데이터베이스와 연결되는 something을 뜻함 
+@Repository
+public class CourseJdbcRepository {
+
+	// "spring jdbc를 이용해서 sql문을 실행하고 싶다! - JdbcTemplete 필요
+
+	private JdbcTemplate springJdbcTemplete;
+}

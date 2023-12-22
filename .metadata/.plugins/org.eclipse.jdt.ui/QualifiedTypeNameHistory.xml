@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.web.reactive.HttpHandlerAutoConfiguration.AnnotationConfig"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="com.in28minutes.learnspringframework.game.GamingConsole"/>
+    <fullyQualifiedTypeName name="com.in28minutes.learnspringframework.game.GameRunner"/>
+    <fullyQualifiedTypeName name="com.in28minutes.learnspringframework.examples.a1.DepInjectionLauncherApplication"/>
+    <fullyQualifiedTypeName name="com.in28minutes.learnspringframework.examples.a0.SimpleSpringContextLauncherApplication"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.config.ConfigurableBeanFactory"/>
+    <fullyQualifiedTypeName name="com.in28minutes.learnspringframework.examples.e1.PrototypeClass"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+</qualifiedTypeNameHistroy>

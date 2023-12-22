@@ -1,0 +1,8 @@
+package com.in28minutes.springboot.learnjpaandhibernate.course;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class CourseJpaRepository {
+
+}

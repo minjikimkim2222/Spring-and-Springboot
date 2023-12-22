@@ -1,0 +1,27 @@
+package com.in28minutes.springboot.learnspringboot;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CourseController {
+	// http://localhost:8080/courses
+	// course : id, name, author
+
+	/*
+	 * http://localhost:8080/courses
+	 * 
+	 * { "id": 1, "name": "Learn AWS", "author": "in28minutes" } 
+	 * 
+	 * ]
+	 */
+
+	public List<Course> retriveAllCourses() {
+
+		return Arrays.asList(
+
+		);
+	}
+}

@@ -1,0 +1,6 @@
+package com.in28minutes.springboot.learnjpaandhibernate.course;
+
+@Repository
+public class CourseJpaRepository {
+
+}

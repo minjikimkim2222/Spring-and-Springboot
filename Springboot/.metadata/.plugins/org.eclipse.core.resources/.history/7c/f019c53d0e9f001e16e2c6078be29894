@@ -1,0 +1,12 @@
+package com.in28minutes.springboot.learnspringboot;
+
+import org.springframework.web.bind.annotation.RestController;
+
+//http://localhost:8080/courses
+// course : id, name, author
+
+@RestController
+public class CourseController {
+	//http://localhost:8080/courses
+	// course : id, name, author
+}
