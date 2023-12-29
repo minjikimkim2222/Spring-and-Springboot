@@ -853,3 +853,27 @@
 2023-12-29 19:35:27,196 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
 2023-12-29 19:35:27,197 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
 2023-12-29 19:35:27,199 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/minji/Desktop/Spring-and-Springboot/springboot-with-jpa-and-hibernate/learn-jpa-and-hibernate/src/test/resources
+2023-12-29 19:42:54,096 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:42:54,099 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:42:54,100 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/minji/Desktop/Spring-and-Springboot/springboot-with-jpa-and-hibernate/learn-jpa-and-hibernate/src/test/resources
+2023-12-29 19:44:12,100 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:44:12,101 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:44:12,102 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/minji/Desktop/Spring-and-Springboot/springboot-with-jpa-and-hibernate/learn-jpa-and-hibernate/src/test/resources
+2023-12-29 19:44:24,151 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:44:24,160 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:44:24,162 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/minji/Desktop/Spring-and-Springboot/springboot-with-jpa-and-hibernate/learn-jpa-and-hibernate/src/test/resources
+2023-12-29 19:47:17,197 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:47:17,198 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:47:17,199 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/minji/Desktop/Spring-and-Springboot/springboot-with-jpa-and-hibernate/learn-jpa-and-hibernate/src/test/resources
+2023-12-29 19:47:28,274 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:47:28,275 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:47:28,276 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/minji/Desktop/Spring-and-Springboot/springboot-with-jpa-and-hibernate/learn-jpa-and-hibernate/src/test/resources
+2023-12-29 19:47:33,887 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:47:33,889 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:47:33,890 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/minji/Desktop/Spring-and-Springboot/springboot-with-jpa-and-hibernate/learn-jpa-and-hibernate/src/test/resources
+2023-12-29 19:49:34,782 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:49:34,783 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:49:34,784 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/minji/Desktop/Spring-and-Springboot/springboot-with-jpa-and-hibernate/learn-jpa-and-hibernate/src/test/resources
+2023-12-29 19:50:20,573 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:50:20,574 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2023-12-29 19:50:20,575 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/minji/Desktop/Spring-and-Springboot/springboot-with-jpa-and-hibernate/learn-jpa-and-hibernate/src/test/resources
