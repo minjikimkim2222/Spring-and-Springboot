@@ -1,9 +1,0 @@
-logging.level.org.springframework=debug
-
-spring.profiles.active = dev
-
-currency-service.url = http://default.minjiki.com
-
-currency-service.username = defaultusername
-
-currency-service.key = defaultkey
