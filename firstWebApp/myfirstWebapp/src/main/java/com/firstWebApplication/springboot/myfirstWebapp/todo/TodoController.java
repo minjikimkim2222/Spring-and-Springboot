@@ -67,6 +67,6 @@ public class TodoController {
 		// Delete todo
 		todoService.deleteById(id);
 		// 삭제된 todo를 보여주는 redirect:list-todos
-		return "redirect:listTodos";
+		return "redirect:list-todos";
 	}
 }
