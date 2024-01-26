@@ -69,4 +69,27 @@ public class TodoController {
 		// 삭제된 todo를 보여주는 redirect:list-todos
 		return "redirect:list-todos";
 	}
+
+	// update-todo - GET
+	@RequestMapping(value = "/update-todo", method = RequestMethod.GET)
+	public String showUpdateTodoPage(@RequestParam int id, ModelMap model) {
+
+		Todo todo = todoService.findById(id);
+		model.put("todo", todo);
+		return "addTodo";
+	}
+
+	// update-todo - POST
+	@RequestMapping(value = "/update-todo", method = RequestMethod.POST)
+	public String updateNewTodoPage(ModelMap model, @Valid Todo todo, BindingResult result) {
+
+		if (result.hasErrors()) {
+			return "addTodo";
+		}
+
+		String username = (String) model.get("name");
+		todo.setUsername(username);
+		todoService.updateTodo(todo);
+		return "redirect:list-todos";
+	}
 }

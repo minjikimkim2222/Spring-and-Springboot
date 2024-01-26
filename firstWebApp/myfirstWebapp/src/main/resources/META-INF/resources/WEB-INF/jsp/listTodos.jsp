@@ -17,7 +17,9 @@
 						<th>Description</th>
 						<th>Deadline</th>
 						<th>is Done?</th>
-						<th>delete</th>
+						<th></th>
+						<th></th>
+			
 					</tr>
 				</thead>
 				<tbody>
@@ -28,6 +30,7 @@
 							<td>${todo.deadline}</td>
 							<td>${todo.done}</td>
 							<td> <a href = "delete-todo?id=${todo.id}" class = "btn btn-warning">DELETE</a> <td>
+							<td><a href = "update-todo?id=${todo.id}" class = "btn btn-success">UPDATE</a></td>
 						</tr>
 					</c:forEach>
 				</tbody>

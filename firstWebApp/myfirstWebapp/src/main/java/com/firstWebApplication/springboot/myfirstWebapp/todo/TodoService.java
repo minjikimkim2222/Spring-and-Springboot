@@ -7,6 +7,8 @@ import java.util.function.Predicate;
 
 import org.springframework.stereotype.Service;
 
+import jakarta.validation.Valid;
+
 @Service
 public class TodoService {
 	private static List<Todo> todos = new ArrayList<>();
@@ -43,6 +45,23 @@ public class TodoService {
 		// 람다 함수 x -> y : todo -> todo.getId() == id
 		Predicate<? super Todo> predicate = todo -> todo.getId() == id;
 
-		todos.removeIf(predicate);
+		todos.removeIf(predicate); // 모든 todo bean에 대해, 해당 조건을 만족하면 remove된다.
 	}
+
+	public Todo findById(int id) {
+
+		Predicate<? super Todo> predicate = todo -> todo.getId() == id;
+		// predicate은 todo 리스트에서 우리가 찾는 id를 매칭하게끔 도와준다.
+
+		Todo todo = todos.stream().filter(predicate).findFirst().get();
+		return todo;
+	}
+
+	public void updateTodo(@Valid Todo todo) {
+		// TODO Auto-generated method stub
+		deleteById(todo.getId());
+		todos.add(todo);
+
+	}
+
 }
