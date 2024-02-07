@@ -42,7 +42,8 @@ public class TodoController {
 	public String showNewTodoPage(ModelMap model) {
 
 		String username = (String) model.get("name");
-		Todo todo = new Todo(0, username, "", LocalDate.now().plusYears(1), false); // 새로운 Todo를 생성할 때마다의 디폴트 todo
+		Todo todo = new Todo(0, username, "", LocalDate.now().plusYears(1), false); // 새로운 Todo를 생성할 때마다의
+																					// 디폴트 todo
 		model.put("todo", todo); // model scope == request URL scope이기에 /add-todo에만 해당 모델값이 유지된다.
 
 		return "addTodo";
@@ -56,7 +57,7 @@ public class TodoController {
 			return "addTodo";
 		}
 		String username = (String) model.get("name");
-		todoService.AddTodo(username, todo.getDescription(), LocalDate.now().plusYears(1), false);
+		todoService.AddTodo(username, todo.getDescription(), todo.getDeadline(), false);
 		return "redirect:list-todos";
 	}
 
