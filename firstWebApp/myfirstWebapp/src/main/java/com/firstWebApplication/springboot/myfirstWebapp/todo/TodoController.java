@@ -34,7 +34,7 @@ public class TodoController {
 
 		model.addAttribute("todos", todos);
 
-		return "listTodos2";
+		return "listTodos";
 	}
 
 	// add-todo - GET
