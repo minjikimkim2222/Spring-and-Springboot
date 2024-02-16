@@ -30,7 +30,8 @@ public class TodoService {
 	}
 
 	public List<Todo> findByUsername(String userName) {
-		return todos;
+		Predicate<? super Todo> predicate = todo -> todo.getUsername().equalsIgnoreCase(userName);
+		return todos.stream().filter(predicate).toList();
 	}
 
 	public void AddTodo(String username, String description, LocalDate deadline, boolean done) {
@@ -42,7 +43,7 @@ public class TodoService {
 
 	public void deleteById(int id) {
 
-		// 람다 함수 x -> y : todo -> todo.getId() == id
+		// 문자열은 todo -> todo.getId() == id처럼 ==을 쓸 수 없다.
 		Predicate<? super Todo> predicate = todo -> todo.getId() == id;
 
 		todos.removeIf(predicate); // 모든 todo bean에 대해, 해당 조건을 만족하면 remove된다.
