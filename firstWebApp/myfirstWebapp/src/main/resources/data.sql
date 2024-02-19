@@ -1,0 +1,15 @@
+INSERT INTO todo
+(ID, USERNAME, DESCRIPTION, DEADLINE, DONE)
+VALUES (10001, 'h2 server','start h2 DB - from h2', CURRENT_DATE(), false);
+
+INSERT INTO todo
+(ID, USERNAME, DESCRIPTION, DEADLINE, DONE)
+VALUES (10002, 'minjiki2','start h2 DB - from h2', CURRENT_DATE(), false);
+
+INSERT INTO todo
+(ID, USERNAME, DESCRIPTION, DEADLINE, DONE)
+VALUES (10003, 'minjiki2','start h2 DB - from h2', CURRENT_DATE(), false);
+
+INSERT INTO todo
+(ID, USERNAME, DESCRIPTION, DEADLINE, DONE)
+VALUES (10004, 'minjiki2','start h2 DB - from h2', CURRENT_DATE(), false);

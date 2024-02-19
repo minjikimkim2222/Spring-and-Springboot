@@ -17,13 +17,13 @@ public class TodoService {
 
 	// static 변수 초기화를 위해서는, static 블럭이 필요.
 	static {
-		todos.add(new Todo(++todosCount, "minjiki2", "Learn springboot",
+		todos.add(new Todo(++todosCount, "minjiki2", "Learn springboot - from static list",
 
 				LocalDate.now().plusYears(1), false));
-		todos.add(new Todo(++todosCount, "minjiki2", "Learn db",
+		todos.add(new Todo(++todosCount, "minjiki2", "Learn db - from static list",
 
 				LocalDate.now().plusYears(1), false));
-		todos.add(new Todo(++todosCount, "minjiki2", "Learn algorithm",
+		todos.add(new Todo(++todosCount, "minjiki2", "Learn algorithm - from static list",
 
 				LocalDate.now().plusYears(2), false));
 
