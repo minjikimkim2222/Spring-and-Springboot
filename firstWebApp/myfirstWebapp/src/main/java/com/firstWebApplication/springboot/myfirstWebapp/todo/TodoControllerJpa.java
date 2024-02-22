@@ -32,7 +32,7 @@ public class TodoControllerJpa {
 	@RequestMapping("/list-todos")
 	public String listAllTodos(ModelMap model) {
 
-		String username = (String) getLoggedInUsername(model);
+		String username = (String) getLoggedInUsername();
 
 		List<Todo> todos = todoRepository.findByUsername(username);
 
@@ -45,7 +45,7 @@ public class TodoControllerJpa {
 	@RequestMapping(value = "/add-todo", method = RequestMethod.GET)
 	public String showNewTodoPage(ModelMap model) {
 
-		String username = (String) getLoggedInUsername(model);
+		String username = (String) getLoggedInUsername();
 		Todo todo = new Todo(0, username, "", LocalDate.now().plusYears(1), false); // 새로운 Todo를 생성할 때마다의
 																					// 디폴트 todo
 		model.put("todo", todo); // model scope == request URL scope이기에 /add-todo에만 해당 모델값이 유지된다.
@@ -60,7 +60,7 @@ public class TodoControllerJpa {
 		if (result.hasErrors()) {
 			return "addTodo";
 		}
-		String username = (String) getLoggedInUsername(model);
+		String username = (String) getLoggedInUsername();
 		todo.setUsername(username);
 		todoRepository.save(todo);
 
@@ -94,14 +94,16 @@ public class TodoControllerJpa {
 			return "addTodo";
 		}
 
-		String username = (String) getLoggedInUsername(model);
+		String username = (String) getLoggedInUsername();
 		todo.setUsername(username);
 		todoRepository.save(todo);
 
 		return "redirect:list-todos";
 	}
 
-	private String getLoggedInUsername(ModelMap model) {
+	private String getLoggedInUsername() {
+		// 로그인된 사용자 이름을 Spring Security를 통해 받을 것
+		// Spring Security에 존재하는 SecurityContextHolder클래스
 		Authentication authentication
 
 				= SecurityContextHolder.getContext().getAuthentication();
