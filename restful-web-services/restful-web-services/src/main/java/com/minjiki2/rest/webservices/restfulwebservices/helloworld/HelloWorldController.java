@@ -1,6 +1,7 @@
 package com.minjiki2.rest.webservices.restfulwebservices.helloworld;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -16,4 +17,9 @@ public class HelloWorldController {
 		return new HelloWorldBean("hello world");
 	}
 
+	// /hello-world/path-variable/minjiki2
+	@GetMapping(path = "/hello-world/path-variable/{name}")
+	public HelloWorldBean helloWorldPathVariable(@PathVariable("name") String userName) {
+		return new HelloWorldBean(String.format("Hello world, %s", userName));
+	}
 }
