@@ -22,4 +22,13 @@ public class HelloWorldController {
 	public HelloWorldBean helloWorldPathVariable(@PathVariable("name") String userName) {
 		return new HelloWorldBean(String.format("Hello world, %s", userName));
 	}
+
+	@GetMapping(path = "/hello-world-internationalized")
+	public String helloWorldInternationalized() {
+		return "hello world v2";
+//		- Example: `en` - English (Good Morning)
+//		- Example: `nl` - Dutch (Goedemorgen)
+//		- Example: `fr` - French (Bonjour)
+//		- Example: `de` - Deutsch (Guten Morgen)
+	}
 }
