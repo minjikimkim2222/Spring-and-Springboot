@@ -26,20 +26,20 @@ import jakarta.validation.Valid;
 @RestController
 public class UserJpaResource {
 
-	private UserRepository repository;
+	private UserRepository userRepository;
 	private PostRepository postRepository;
 
 	@Autowired
 	public UserJpaResource(UserRepository repository, PostRepository postRepository) {
 		super();
-		this.repository = repository;
+		this.userRepository = repository;
 		this.postRepository = postRepository;
 	}
 
 	// GET /users
 	@GetMapping("/jpa/users")
 	public List<User> retrieveAllUsers() {
-		return repository.findAll();
+		return userRepository.findAll();
 	}
 
 	// http://localhost:8080/users
@@ -48,7 +48,7 @@ public class UserJpaResource {
 
 	@GetMapping("/jpa/users/{id}")
 	public EntityModel<User> retrieveOneUser(@PathVariable("id") int id) {
-		User user = repository.findById(id).get();
+		User user = userRepository.findById(id).get();
 
 		if (user == null) {
 			throw new UserNotFoundException("id" + id);
@@ -66,7 +66,7 @@ public class UserJpaResource {
 	@PostMapping("/jpa/users")
 	public ResponseEntity<User> CreateUser(@Valid @RequestBody User user) {
 
-		User savedUser = repository.save(user);
+		User savedUser = userRepository.save(user);
 		// /jpa/users/4 => /jpa/users/{id}, user.getID
 		URI location = ServletUriComponentsBuilder.fromCurrentContextPath()
 
@@ -78,13 +78,13 @@ public class UserJpaResource {
 	// DELETE /users/{id}
 	@DeleteMapping("/jpa/users/{id}")
 	public void deleteUser(@PathVariable("id") int id) {
-		repository.deleteById(id);
+		userRepository.deleteById(id);
 	}
 
 	// GET /users/{id}/posts
 	@GetMapping("/jpa/users/{id}/posts")
 	public List<Post> retrievePostsForUser(@PathVariable("id") int id) {
-		User user = repository.findById(id).get();
+		User user = userRepository.findById(id).get();
 
 		if (user == null) {
 			throw new UserNotFoundException("id" + id);
@@ -97,7 +97,7 @@ public class UserJpaResource {
 	@PostMapping("/jpa/users/{id}/posts")
 	public ResponseEntity<Object> createPostForUser(@PathVariable("id") int id, @Valid @RequestBody Post post) {
 
-		User user = repository.findById(id).get();
+		User user = userRepository.findById(id).get();
 
 		if (user == null) {
 			throw new UserNotFoundException("id" + id);
